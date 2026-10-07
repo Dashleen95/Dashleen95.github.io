@@ -1,78 +1,17 @@
-<span class="mobile btn-mobile-menu">
-  <i class="icon icon-list btn-mobile-menu__icon"></i>
-  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-</span>
-
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover-c-alt.jpg)">
-  <div class="panel-main">
-
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}/images/pic17.jpg" class="user-image" alt="Portrait of Tushar Kundu">
-          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
-        </a>
-        <hr class="panel-cover__divider">
-        <p class="panel-cover__description">{{ site.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-
-        <div class="navigation-wrapper">
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/about" title="About {{ site.title }}" class="blog-button">About</a></li>
-            </ul>
-           
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/research" title="Research by {{ site.title }}" class="blog-button">Research</a></li>
-            </ul>
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/teaching" title="Teaching by {{ site.title }}" class="blog-button">Teaching</a></li>
-            </ul>
-             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/files/Resume_Tushar_Kundu.pdf" title="Resume of {{ site.title }}" class="blog-button" target="_blank" rel="noopener noreferrer">Resume</a></li>
-            </ul>
-          </nav>
-          
-          <br/>
-
-          <nav class="cover-navigation navigation--social">
-            <ul class="navigation">
-
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}">
-                  <i class="icon icon-mail" style="font-size:24px" ></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-            {% endif %}
-
-               <!-- Twitter -->
-
-              <li class="navigation__item">
-                <a href="https://twitter.com/tushardonnay" title="Tushar Kundu on Twitter" target="_blank" rel="noopener noreferrer">
-                 <i class="fa fa-twitter" style="font-size:24px" aria-hidden="true"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-              
-              <li class="navigation__item">
-                <a href="https://github.com/tusharkundu" title="Tushar Kundu on GitHub" target="_blank" rel="noopener noreferrer">
-                 <i class="fa fa-github" style="font-size:24px" aria-hidden="true"></i>
-                  <span class="label">Github</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="panel-cover--overlay"></div>
+<header class="panel-cover">
+  <div class="panel-main__inner">
+    <a class="portrait-link" href="{{ site.baseurl }}/" aria-label="Dashleen Kaur, home"><img class="user-image" src="{{ site.baseurl }}/images/dashleen-kaur-portrait.jpg" alt="Dashleen Kaur" width="174" height="174"></a>
+    <a class="panel-title" href="{{ site.baseurl }}/">Dashleen Kaur</a>
+    <p class="panel-role">PhD Candidate in Economics</p>
+    <p class="panel-affiliation">University of British Columbia</p>
+    <hr class="panel-cover__divider">
+    <nav class="cover-navigation" aria-label="Main navigation">
+      <a class="nav-about" href="{{ site.baseurl }}/">About</a>
+      <a class="nav-research" href="{{ site.baseurl }}/research/">Research</a>
+      <a class="nav-teaching" href="{{ site.baseurl }}/teaching/">Teaching</a>
+      <a class="nav-cv" href="{{ site.baseurl }}/cv/">CV</a>
+    </nav>
+    <nav class="panel-social" aria-label="Contact and profiles"><a class="nav-contact" href="{{ site.baseurl }}/contact/">Contact</a><span aria-hidden="true">·</span><a href="https://ca.linkedin.com/in/dashleen-kaur-112398172">LinkedIn</a><span aria-hidden="true">·</span><a href="https://github.com/Dashleen95">GitHub</a></nav>
+    <p class="panel-fields">Education · Gender · Development</p>
   </div>
 </header>

@@ -1,43 +1,25 @@
-# Site settings
-title: Tushar Kundu
-description: Economist and data scientist
-url: 'https://tusharkundu.github.io'
-baseurl: ""
-google_analytics: G-281FKZF4HM
-# disqus_shortname: 'your-disqus-name'
-
-author:
-  name: 'Tushar Kundu'
-  email: tk2859@columbia.edu
-
-
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
-
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:title/
-markdown: kramdown
-highlighter: rouge
-
-sass:
-    sass_dir: _sass
-    style: compressed
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', '_posts/2019-12-16-contact.markdown']
+{
+  "title": "Dashleen Kaur",
+  "description": "PhD candidate in Economics at UBC. Education, gender, and development.",
+  "url": "https://dashleen95.github.io",
+  "baseurl": "",
+  "author": {
+    "name": "Dashleen Kaur",
+    "email": "dashleen@student.ubc.ca",
+    "email_secondary": "dashleen95@gmail.com"
+  },
+  "include": [
+    "_pages"
+  ],
+  "exclude": [
+    "scripts",
+    "dist",
+    "README.md",
+    "ORIGIN.md",
+    "Gemfile",
+    "Gemfile.lock",
+    ".openai",
+    ".sites-runtime"
+  ],
+  "destination": "_site"
+}
