@@ -2,6 +2,7 @@
 JSON is valid YAML; the same sources also work with native Jekyll.
 """
 from pathlib import Path
+import base64
 import html
 import json
 import re
@@ -44,6 +45,16 @@ def main():
         print(f"Built {page['permalink']}")
     shutil.copytree(ROOT / "images", OUT / "images")
     shutil.copytree(ROOT / "files", OUT / "files")
+    # Decode assets stored in small parts for connector uploads.
+    for first_part in sorted((ROOT / "files").glob("*.b64.part1")):
+        filename = first_part.name.removesuffix(".b64.part1")
+        parts = sorted((ROOT / "files").glob(filename + ".b64.part*"))
+        target = OUT / "files" / filename
+        if not target.exists():
+            encoded = "".join(part.read_text().strip() for part in parts)
+            target.write_bytes(base64.b64decode(encoded, validate=True))
+        for part in parts:
+            (OUT / "files" / part.name).unlink()
     (OUT / "css").mkdir()
     shutil.copy(ROOT / "css/site.css", OUT / "css/site.css")
     shutil.copy(ROOT / "LICENSE", OUT / "LICENSE")
