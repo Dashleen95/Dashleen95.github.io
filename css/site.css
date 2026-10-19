@@ -20,3 +20,6 @@
 .panel-social{margin-top:.9rem}.page-contact .panel-social .nav-contact{color:#fff;text-decoration:underline;text-underline-offset:5px}.paper-status{font-size:.93rem;color:var(--muted);margin:.45rem 0 .65rem}.paper-abstract{margin:.8rem 0 0}.paper-abstract .abstract{margin-top:.7rem}.paper-abstract summary{font-size:.96rem}.paper-abstract .abstract p{margin:0}
 .paper-status-small{font-size:.875rem}
 .paper-resources{display:flex;align-items:baseline;flex-wrap:wrap;gap:.35rem;font-size:.875rem;color:var(--muted);margin:.55rem 0 0}.abstract-toggle{font:inherit;line-height:inherit;color:var(--accent);border:0;background:none;padding:0;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer}.abstract-toggle:hover{color:#0c3b46}.abstract-toggle:focus-visible{outline:3px solid #448aac;outline-offset:5px;border-radius:2px}.paper-resource-unavailable{color:var(--muted)}.research-abstract{margin-top:.8rem}.research-abstract[hidden]{display:none}
+
+/* Direct CV download beneath the portrait on the CV page. */
+.profile-cv-download{display:none}.page-cv .portrait-link{margin-bottom:.65rem}.page-cv .profile-cv-download{display:block;width:fit-content;margin:0 auto 1.6rem;color:#c8d6df;font-size:.9rem}.page-cv .profile-cv-download:hover{color:#fff}
